@@ -1,0 +1,32 @@
+@use "../utils/variables" as *;
+
+.userbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &__avatar {
+    border-radius: 999px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__credentials-column {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  &__name,
+  &__comment,
+  &__username {
+    line-height: 1.25;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__username {
+    opacity: 0.6;
+  }
+}

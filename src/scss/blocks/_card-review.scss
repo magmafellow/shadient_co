@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+.card-review {
+  background-color: $surface;
+  border: 1px solid $border-main;
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__comment {
+    line-height: 1.25;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
