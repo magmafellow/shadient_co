@@ -1,0 +1,64 @@
+@use '../utils/variables' as *;
+
+
+.button {
+  cursor: pointer;
+  transition: 150ms;
+  border-radius: 999px;
+  line-height: 1.25;
+  font-weight: 700;
+  font-size: 14px;
+  border: 3px solid red;
+
+
+  &:hover {
+    filter: hue-rotate(90deg);
+  }
+}
+
+.button-primary {}
+.button-outline {}
+
+.button-brand.button-primary {
+  background-color: $brand-default;
+  color: #000;
+  border: 1px solid $brand-default;
+}
+
+.button-brand.button-outline {
+  border: 1px solid $brand-default;
+  background-color: transparent;
+  color: $brand-default;
+}
+
+
+
+.button-size-lg {
+  padding-block: 17px;
+  padding-inline: 24px;
+}
+
+.button-size-default {
+  padding-block: 10px;
+  padding-inline: 24px;
+}
+
+
+
+
+.button-swiper-nav {
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $brand-default;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F0F0F;
+
+  &:hover {
+    filter: hue-rotate(45deg);
+  }
+}

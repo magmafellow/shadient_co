@@ -1,0 +1,21 @@
+.components {
+  &__heading {
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__section {
+    &-title {
+      
+    }
+    &-box {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  }
+}

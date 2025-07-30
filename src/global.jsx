@@ -10,9 +10,9 @@ export default function ({ url, title, children }) {
         <link rel="stylesheet" href="/src/scss/main.scss" />
       </Head>
       {url === "/" ? (
-        <div className="home">{children}</div>
+        <div className="home typo-body">{children}</div>
       ) : (
-        <div>{children}</div>
+        <div className="typo-body">{children}</div>
       )}
     </>
   )

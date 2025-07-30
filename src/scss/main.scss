@@ -1,6 +1,14 @@
-@use './utils/variables';
-@use './utils/typography';
-@use './utils/helpers';
-@use './utils/reset';
+// utils
+@use 'utils/variables';
+@use 'utils/typography';
+@use 'utils/helpers';
+@use 'utils/reset';
+@use 'utils/tw';
 
-@use './base';
+// blocks
+@use 'base';
+@use 'blocks/components';
+@use 'blocks/responsive-container';
+@use 'blocks/buttons';
+@use 'blocks/inputs';
+

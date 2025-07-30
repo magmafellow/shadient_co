@@ -1,0 +1,135 @@
+@use './variables' as *;
+
+/* Regular */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/font/agrandir/Agrandir-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold (using TextBold) */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/font/agrandir/Agrandir-TextBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Grand Heavy */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/font/agrandir/Agrandir-GrandHeavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Grand Light */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/font/agrandir/Agrandir-GrandLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Narrow */
+@font-face {
+  font-family: 'Agrandir Narrow';
+  src: url('/font/agrandir/Agrandir-Narrow.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Wide Black Italic */
+@font-face {
+  font-family: 'Agrandir Wide';
+  src: url('/font/agrandir/Agrandir-WideBlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Wide Light */
+@font-face {
+  font-family: 'Agrandir Wide';
+  src: url('/font/agrandir/Agrandir-WideLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Thinitallic (Thin Italic) */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/font/agrandir/Agrandir-Thinitallic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Tight */
+@font-face {
+  font-family: 'Agrandir Tight';
+  src: url('/font/agrandir/Agrandir-Tight.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+[class*="typo-h"] {
+  font-family: $font-sans-main;
+  font-weight: 700;
+  color: $text-heading;
+}
+
+.typo-head-1 {
+  font-size: 64px;
+  line-height: 1.125;
+  margin-bottom: 0.5em;
+}
+.typo-head-2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+.typo-head-3 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 0.8em;
+}
+
+@media (max-width: $Dmedia-lg) {
+  .typo-head-1 {
+    font-size: 48px;
+    line-height: 1.16;
+  }
+  .typo-head-2 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+  .typo-head-3 {
+    font-size: 28px;
+    line-height: 1.28;
+  }
+}
+
+@media (max-width: $Dmedia-md) {
+  .typo-head-1 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+  .typo-head-2 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .typo-head-3 {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+
+
+.typo-body {
+  font-family: $font-sans-main;
+  color: $text-default;
+  font-size: 16px;
+  line-height: 1.5;
+}

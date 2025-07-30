@@ -1,5 +1,16 @@
+@use 'utils/variables' as *;
+
+body, html {
+  background-color: $page;
+}
+
+body.scroll-lock {
+  height: 100%;
+  overflow: hidden;
+}
 
 
-body {
-  background-color: rebeccapurple;
+
+.base-section {
+  padding-block: 60px;
 }

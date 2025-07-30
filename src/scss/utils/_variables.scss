@@ -1,0 +1,79 @@
+// colors
+$page: #000;
+$surface: #110F0F;
+$grad-start: #9DE8EE;
+$grad-middle: #FA7C0B;
+$grad-end: #9F8CED;
+
+$brand-default: #FFA800;
+$brand-additional: #8474C4;
+
+$grad-lime: $grad-start;
+$grad-orange: $grad-middle;
+$grad-purple: $grad-end;
+
+$text-heading: #fff;
+$text-default: rgb(231, 231, 231, 0.6);
+
+// colors END
+
+// breakpoints
+// - mobile-first breakpoints
+$media-xs: 360px;
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+$media-container: 1300px;
+$media-2xl: 1400px;
+
+// - desktop-first breakpoints
+$Dmedia-xs: 359.98px;
+// $Dmedia-xs: 419.98px;
+$Dmedia-sm: 575.98px;
+$Dmedia-md: 767.98px;
+$Dmedia-lg: 991.98px;
+$Dmedia-xl: 1199.98px;
+$Dmedia-container: 1169.98px;
+$Dmedia-2xl: 1399.98px;
+// breakpoints END
+
+// spacing
+$space-0: 0;
+$space-xxs: 8px;
+$space-xs: 16px;
+$space-sm: 24px;
+$space-md: 32px;
+$space-lg: 40px;
+$space-xl: 48px;
+$space-2xl: 56px;
+$space-3xl: 64px;
+$space-4xl: 120px;
+// spacing END
+
+// containers
+// mobile-first
+$container: 1300px;
+// desktop-first
+$Dcontainer: 1299.98px;
+
+
+// block margin
+$block-mb-2xl: 10;
+$block-mb-xl: 10;
+$block-mb-lg: 10;
+$block-mb-md: 10;
+$block-mb-sm: 10;
+
+$block-mt-2xl: 120;
+$block-mt-xl: 98;
+$block-mt-lg: 76;
+$block-mt-md: 54;
+$block-mt-sm: 32;
+
+
+
+// fonts
+$font-sans-main: 'Agrandir';
+$font-sans-secondary: 'Helvetica';
+// fonts END
