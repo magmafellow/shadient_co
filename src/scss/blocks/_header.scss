@@ -1,3 +1,52 @@
+@use "../utils/variables" as *;
+
 .header {
-  background-color: rgb(15, 15, 15, .4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(15, 15, 15, 0.4);
+  // height: 142px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px); /* For Safari */
+  border-bottom: 1px solid rgb(128, 128, 128, .25);
+
+  &__container {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__desktop-box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__burger {
+    display: none !important;
+  }
+
+  &__announce {
+    overflow: hidden;
+    height: 0px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: $Dmedia-lg) {
+  .header {
+    &__burger {
+      display: flex !important;
+    }
+
+    &__desktop-box {
+      display: none !important;
+    }
+  }
 }

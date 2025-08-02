@@ -19,3 +19,16 @@
 @use 'blocks/badge';
 @use 'blocks/userbar';
 @use 'blocks/logotype-bar';
+@use 'blocks/menu';
+@use 'blocks/menu-for-mobile';
+@use 'blocks/burger';
+@use 'blocks/mobile-menu';
+
+// sections
+@use 'sections/face-section';
+@use 'sections/we-offer';
+@use 'sections/why-choose';
+@use 'sections/some-pieces-section';
+@use 'sections/reviews-section';
+@use 'sections/discuss-idea-section';
+@use 'sections/trusted-by-section';

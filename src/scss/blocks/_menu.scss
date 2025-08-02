@@ -1,0 +1,32 @@
+@use "../utils/variables" as *;
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+
+  &__item {
+  }
+  &__link {
+    padding: 12px;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: $font-sans-main;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none !important;
+    color: #fff;
+
+    &_container {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: default;
+    }
+
+    &:hover {
+      background-color: rgb(255, 255, 255, .05);
+      // text-decoration: none;
+    }
+  }
+}

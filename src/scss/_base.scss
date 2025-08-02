@@ -1,7 +1,11 @@
-@use 'utils/variables' as *;
+@use "utils/variables" as *;
 
-body, html {
+body,
+html {
   background-color: $page;
+}
+
+body {
 }
 
 .wrapper {
@@ -18,8 +22,29 @@ body.scroll-lock {
   overflow: hidden;
 }
 
-
-
 .base-section {
-  padding-block: 60px;
+  padding-block: 80px;
+}
+
+@media (max-width: $Dmedia-lg) {
+  .base-section {
+    padding-block: 64px;
+  }
+}
+@media (max-width: $Dmedia-md) {
+  .base-section {
+    padding-block: 48px;
+  }
+}
+@media (max-width: $Dmedia-sm) {
+  .base-section {
+    padding-block: 32px;
+  }
+}
+
+.text-gradient-brand {
+  background: linear-gradient(to right, $grad-start, $grad-middle, $grad-end);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

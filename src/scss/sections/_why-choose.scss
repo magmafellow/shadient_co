@@ -1,0 +1,50 @@
+@use "../utils/variables" as *;
+
+
+.why-choose-section {
+  
+  &__container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  &__description {
+    margin-bottom: 2em;
+    text-wrap: balance;
+  }
+  
+  &__media {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {}
+  }
+  &__info {
+    flex: 0 1 50%
+  }
+}
+
+@media (max-width: $Dmedia-lg) {
+  .why-choose-section {
+    &__media {
+      &-img {
+        max-width: 330px;
+      }
+    }
+  }
+}
+
+@media (max-width: $Dmedia-md) {
+  .why-choose-section {
+    &__container {
+      flex-flow: column nowrap;
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+    }
+  }
+}
+

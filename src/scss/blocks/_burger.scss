@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+
+.burger {
+  cursor: pointer;
+  transition: all 150ms;
+  padding: 12px 10px;
+  height: 28px;
+  width: 42px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+  border-radius: 4px;
+
+  &__stick {
+    transition: all 200ms;
+    background-color: #fff;
+    height: 1.77px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 2px;
+    position: relative;
+
+    &_01 {
+    }
+    &_02 {
+    }
+    &_03 {
+    }
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255, 0.05);
+  }
+}
+
+.has-open.burger {
+  .burger__stick_01 {
+    transform: rotate(-45deg) translate(0, -50%);
+    top: 50%;
+  }
+  .burger__stick_02 {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .burger__stick_03 {
+    transform: rotate(45deg) translate(0, 50%);
+    bottom: 50%;
+  }
+}

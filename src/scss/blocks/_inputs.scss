@@ -12,9 +12,14 @@
 }
 
 .input-default {
+  transition: all 150ms;
   color: #fff;
-  border: 2px solid #a1aebf;
+  border: 2px solid rgb(161, 174, 191, 0.7);
   background-color: #0f0f0f;
+
+  &:focus {
+    border: 2px solid rgb(161, 174, 191, 1);
+  }
 
   &::placeholder {
     color: rgb(255, 255, 255, 0.7);

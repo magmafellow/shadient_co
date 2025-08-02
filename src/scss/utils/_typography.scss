@@ -80,6 +80,13 @@
   color: $text-heading;
 }
 
+.typo-head-hero {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 80px;
+  margin-bottom: 0.4em;
+}
+
 .typo-head-1 {
   font-size: 64px;
   line-height: 1.125;
@@ -97,6 +104,11 @@
 }
 
 @media (max-width: $Dmedia-lg) {
+  .typo-head-hero {
+    font-size: 72px;
+    line-height: 68px;
+  }
+  
   .typo-head-1 {
     font-size: 48px;
     line-height: 1.16;
@@ -112,6 +124,10 @@
 }
 
 @media (max-width: $Dmedia-md) {
+  .typo-head-hero {
+    font-size: 56px;
+    line-height: 56px;
+  }
   .typo-head-1 {
     font-size: 36px;
     line-height: 1.22;

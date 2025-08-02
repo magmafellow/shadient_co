@@ -1,0 +1,39 @@
+@use "../utils/variables" as *;
+
+
+.reviews-section {
+  
+  &__info {
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  &__title {
+    line-height: 1.25;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__slide {
+    width: auto;
+  }
+
+  &__card-review {
+    max-width: 307px;
+  }
+
+}
+
+[class*="reviews-section__nav_"].disabled {
+  border-color: gray;
+  color: gray;
+}

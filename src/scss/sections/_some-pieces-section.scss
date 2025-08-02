@@ -1,0 +1,85 @@
+@use "../utils/variables" as *;
+
+.some-pieces-section {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 32px;
+
+    &-spec {
+      grid-row: span 4;
+
+      p {
+        margin-bottom: 24px;
+      }
+    }
+
+    &_big-01 {
+      grid-row: 2 / 4;
+      grid-column: 2 / 3;
+    }
+    &_big-02 {
+      grid-row: 3 / 5;
+      grid-column: 3 / 4;
+    }
+  }
+}
+
+@media (max-width: $Dmedia-lg) {
+  .some-pieces-section {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, auto);
+
+      &-spec {
+        grid-row: auto;
+        grid-column: span 2;
+        text-align: center;
+        text-wrap: balance;
+      }
+
+      &_big-01 {
+        grid-column: 1 / 2;
+      }
+
+      &_big-02 {
+        grid-column: 2 / 3;
+      }
+    }
+  }
+}
+
+@media (max-width: $Dmedia-md) {
+  .some-pieces-section {
+
+    &__grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      &-spec {
+        grid-row: auto;
+        grid-column: auto;
+      }
+
+      &_big-01 {
+        grid-row: auto;
+        grid-column: auto;
+      }
+
+      &_big-02 {
+        grid-row: auto;
+        grid-column: auto;
+      }
+    }
+
+    &__card-blog {
+      margin-inline: auto;
+      width: 100%;
+      
+    }
+  }
+}

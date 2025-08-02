@@ -7,7 +7,7 @@ type Props = {
 
 export default function Footer({className, ...props}: Props) {
   return (
-    <footer className={`${className} footer`} {...props}>
+    <footer className={`${className} footer base-section`} {...props}>
       <ResponsiveContainer>
         Footer
       </ResponsiveContainer>

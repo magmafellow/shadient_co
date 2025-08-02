@@ -1,0 +1,109 @@
+@use "../utils/variables" as *;
+
+.face-section {
+  position: relative;
+  background-image: url("/images/sections/start/bg-grid-big-v2.svg");
+  background-position: 0% 0%;
+  padding-top: 192px !important;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    max-width: 523px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__description {
+    max-width: 523px;
+    margin-inline: auto;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 5;
+  }
+  &__action {
+    max-width: 523px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    z-index: 5;
+
+    &-input {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__grid {
+    position: absolute;
+    display: none;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &-1 {
+      top: -600px;
+      right: -150px;
+    }
+    &-2 {
+      bottom: -600px;
+      left: -350px;
+    }
+  }
+}
+
+@media (max-width: $Dmedia-lg) {
+  .face-section {
+    &__decor {
+      &-1 {
+        top: -730px;
+        right: -200px;
+      }
+      &-2 {
+        bottom: -700px;
+        left: -357px;
+      }
+    }
+  }
+}
+
+@media (max-width: $Dmedia-md) {
+  .face-section {
+    &__action {
+      flex-direction: column;
+
+      &__description,
+      &__title {
+        text-align: center;
+        text-wrap: balance;
+      }
+
+      &-input {
+        max-width: 100%;
+        width: 350px;
+      }
+      &-btn {
+        max-width: 100%;
+        width: 175px;
+      }
+    }
+
+    &__decor {
+      &-1 {
+        top: -780px;
+        right: -230px;
+      }
+      &-2 {
+        bottom: -780px;
+        left: -393px;
+      }
+    }
+  }
+}

@@ -10,6 +10,9 @@ import CardOffer from "../components/ui/card-offer"
 import CardBlog from "../components/ui/card-blog"
 import CardReview from "../components/ui/card-review"
 import LogotypeBar from "../components/ui/logotype-bar"
+import React from "react"
+import Menu from "../components/ui/menu"
+import Burger from "../components/ui/burger"
 
 export default function () {
   return (
@@ -98,6 +101,26 @@ export default function () {
           <div className="components__section-description mb-1h"></div>
           <div className="components__section-box">
             <LogotypeBar textClassName="log-text" />
+          </div>
+        </div>
+        <div className="components__section base-section">
+          <div className="components__section-title typo-head-2">
+            Menu:
+          </div>
+          <div className="components__section-description mb-1h"></div>
+          <div className="components__section-box">
+            <Menu />
+          </div>
+        </div>
+        <div className="components__section base-section">
+          <div className="components__section-title typo-head-2">
+            Burger:
+          </div>
+          <div className="components__section-description mb-1h"></div>
+          <div className="components__section-box">
+            <Burger />
+            <Burger className="has-open" />
+            <Burger />
           </div>
         </div>
       </ResponsiveContainer>
