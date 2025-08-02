@@ -1,0 +1,16 @@
+@use "../utils/variables" as *;
+
+.logotype-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  &__img {
+  }
+  &__text {
+    font-family: $font-sans-main;
+    font-weight: 900;
+    line-height: 1.08;
+    color: $text-heading;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../utils/variables' as *;
+
+.badge {
+  color: $dark-blue;
+  line-height: 1.33333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: $brand-default;
+  font-family: $font-sans-subsidiary;
+  font-size: 12px;
+  font-weight: 600;
+}
