@@ -1,4 +1,6 @@
 import { Head } from "minista"
+import Header from "./components/ui/header"
+import Footer from "./components/ui/footer"
 
 export default function ({ url, title, children }) {
   return (
@@ -9,11 +11,12 @@ export default function ({ url, title, children }) {
 
         <link rel="stylesheet" href="/src/scss/main.scss" />
       </Head>
-      {url === "/" ? (
-        <div className="home typo-body">{children}</div>
-      ) : (
-        <div className="typo-body">{children}</div>
-      )}
+
+      <div className="wrapper typo-body">
+        <Header />
+        <div className="grow">{children}</div>
+        <Footer />
+      </div>
     </>
   )
 }

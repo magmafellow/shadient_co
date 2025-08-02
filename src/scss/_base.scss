@@ -4,6 +4,15 @@ body, html {
   background-color: $page;
 }
 
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100dvh;
+}
+.grow {
+  flex-grow: 1;
+}
+
 body.scroll-lock {
   height: 100%;
   overflow: hidden;
