@@ -7,3 +7,6 @@ import '/js/sections/header/mobile-menu.js';
 
 // reviews
 import '/js/sections/reviews/swiper.js';
+
+// trusted-by
+import '/js/sections/trusted-by/swiper.js'

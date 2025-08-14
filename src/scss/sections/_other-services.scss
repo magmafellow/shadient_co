@@ -1,0 +1,38 @@
+@use "../utils/variables" as *;
+
+.other-services {
+  background-color: $surface;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 70px;
+  }
+}
+
+@media (width < $media-lg) {
+  .other-services {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (width < $media-md) {
+  .other-services {
+    &__grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (width < $media-sm) {
+  .other-services {
+    &__grid {
+      margin-bottom: 28px;
+    }
+  }
+}

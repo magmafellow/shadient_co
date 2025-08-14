@@ -1,6 +1,37 @@
 @use "../utils/variables" as *;
 
-
 .trusted-by-section {
-  
+  &__info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 64px;
+  }
+
+  &__title,
+  &__description {
+    flex: 0 1 50%;
+  }
+
+  &__slide {
+    width: auto;
+  }
+
+  &__swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  &__swiper-1 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (width < $media-md) {
+  .trusted-by-section {
+    &__info {
+      flex-flow: column nowrap;
+      text-align: center;
+      max-width: 523px;
+      margin-inline: auto;
+    }
+  }
 }

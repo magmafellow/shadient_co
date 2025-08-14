@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+
+
+.col-foot {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  gap: 24px;
+
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  &__item {
+    font-weight: 500;
+    line-height: 1.25;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

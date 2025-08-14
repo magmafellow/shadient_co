@@ -61,6 +61,8 @@
 
 @media (max-width: $Dmedia-lg) {
   .face-section {
+    padding-top: 163px !important;
+
     &__decor {
       &-1 {
         top: -730px;
@@ -76,6 +78,8 @@
 
 @media (max-width: $Dmedia-md) {
   .face-section {
+    padding-top: 153px !important;
+    
     &__action {
       flex-direction: column;
 

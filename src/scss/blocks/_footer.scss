@@ -1,0 +1,83 @@
+@use "../utils/variables" as *;
+
+.footer {
+  padding-bottom: 40px;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__info {
+    min-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+
+    &-input {
+      max-width: 260px;
+    }
+  }
+
+  &__menu-grid {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__subsidiary {
+    text-align: center;
+  }
+
+  &__link-magma {
+    color: rgb(135, 235, 143);
+  }
+}
+
+@media (width < $media-xl) {
+  .footer {
+    &__info {
+      min-width: 260px;
+    }
+  }
+}
+
+@media (width < $media-lg) {
+  .footer {
+    &__main {
+      margin-bottom: 60px;
+    }
+
+    &__menu-grid {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 32px;
+    }
+  }
+}
+
+@media (width < $media-md) {
+  .footer {
+    padding-bottom: 20px;
+    
+    &__main {
+      margin-bottom: 32px;
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    &__info {
+      gap: 16px;
+    }
+
+  }
+}
+
+@media (width < $media-sm) {
+  .footer {
+    &__menu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -23,6 +23,8 @@
 @use 'blocks/menu-for-mobile';
 @use 'blocks/burger';
 @use 'blocks/mobile-menu';
+@use 'blocks/logo-box';
+@use 'blocks/col-foot';
 
 // sections
 @use 'sections/face-section';
@@ -32,3 +34,7 @@
 @use 'sections/reviews-section';
 @use 'sections/discuss-idea-section';
 @use 'sections/trusted-by-section';
+@use 'sections/general-face';
+@use 'sections/general-text';
+@use 'sections/branding-works';
+@use 'sections/other-services';

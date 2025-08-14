@@ -12,7 +12,7 @@ export default function () {
   return (
     <>
       <Head>
-        <title>Hello!</title>
+        <title>Main Page | by magmafellow</title>
       </Head>
       <FaceSection />
       <TrustedBySection />

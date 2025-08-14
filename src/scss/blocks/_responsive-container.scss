@@ -1,6 +1,6 @@
 @use "../utils/variables" as *;
 
-$safe-padding: 10px;
+$safe-padding: 16px;
 
 .responsive-container {
   margin-inline: auto;
@@ -8,34 +8,31 @@ $safe-padding: 10px;
   padding-inline: calc($safe-padding / 2);
 }
 
-@media (max-width: $container ) { // depends on parent padding-inline
+@media (max-width: $container) { // depends on parent padding-inline
   .responsive-container {
-    max-width: calc($media-xl + 10px);
+    max-width: calc($media-xl + $safe-padding);
   }
 }
 
 @media (max-width: $Dmedia-xl) {
   .responsive-container {
-    max-width: calc($media-lg + 10px);
+    max-width: calc($media-lg + $safe-padding);
   }
 }
 
 @media (max-width: $Dmedia-lg) {
   .responsive-container {
-    max-width: calc($media-md + 8px);
-    padding-inline: 4px;
+    max-width: calc($media-md + $safe-padding);
   }
 }
 
 @media (max-width: $Dmedia-md) {
   .responsive-container {
     width: 100%;
-    margin-inline: 0px;
   }
 }
 
 @media (max-width: $Dmedia-sm) {
   .responsive-container {
-    padding-inline: 2px;
   }
 }

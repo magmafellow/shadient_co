@@ -1,0 +1,88 @@
+@use "../utils/variables" as *;
+
+.general-face {
+  position: relative;
+  background-image: url("/images/sections/start/bg-grid-big-v2.svg");
+  background-position: 0% 0%;
+  padding-top: 165px !important;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+
+    &-1 {
+      top: -600px;
+      right: -150px;
+    }
+    &-2 {
+      bottom: -690px;
+      left: -350px;
+    }
+  }
+
+  &__title,
+  &__subtitle,
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: $brand-default;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  &__title {
+    font-size: 64px;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    max-width: 523px;
+  }
+  
+  &__action {
+    margin-bottom: 163px;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+@media (width < $media-xl) {
+  .general-face {
+    &__action {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+@media (width < $media-lg) {
+  .general-face {
+    &__decor-1 {
+      top: -650px;
+    }
+    
+    &__action {
+      margin-bottom: 82px;
+    }
+  }
+}
+
+@media (width < $media-md) {
+  .general-face {
+    &__action {
+      margin-bottom: 56px;
+    }
+  }
+}

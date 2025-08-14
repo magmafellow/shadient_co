@@ -12,7 +12,7 @@ export default function Menu({ className, ...props }: Props) {
         </div>
       </li>
       <li className="menu__item">
-        <a href="#" className="menu__link">
+        <a href="/service" className="menu__link">
           Services
         </a>
       </li>{" "}

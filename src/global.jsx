@@ -8,7 +8,9 @@ export default function ({ url, title, children }) {
     <>
       <Head>
         <title>{title}</title>
+        {/* Developed by magmafellow */}
         <meta property="description" content="description" />
+        <link rel="icon" href="favicon.png" type="image/png"></link>
         {/* Third-party */}
         <style>
           @import

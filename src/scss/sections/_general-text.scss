@@ -1,0 +1,36 @@
+@use "../utils/variables" as *;
+
+.general-text {
+  background-color: #0f0f0f;
+
+  &__title {
+  }
+  &__text {
+    margin-bottom: 70px;
+  }
+}
+
+@media (width < $media-lg) {
+  .general-text {
+    &__text {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (width < $media-md) {
+  .general-text {
+    &__text {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (width < $media-sm) {
+  .general-text {
+    &__text {
+      margin-bottom: 28px;
+    }
+  }
+}
+
